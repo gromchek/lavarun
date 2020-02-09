@@ -16,7 +16,7 @@ int main()
 
 	const auto &vidModes = sf::VideoMode::getFullscreenModes();
 
-	sf::RenderWindow window( vidModes[0], "Lava block", displayMode );
+	sf::RenderWindow window( sf::VideoMode::getDesktopMode(), "Lava block", displayMode );
 	window.setVerticalSyncEnabled( true );
 	window.setKeyRepeatEnabled( false );
     window.setMouseCursorVisible( false );
